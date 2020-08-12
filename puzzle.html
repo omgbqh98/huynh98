@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="image"><img id="imgg" onclick="img()" src="https://znews-photo.zadn.vn/w660/Uploaded/kbd_bcvi/2019_11_23/5d828d976f24eb1a752053b5_thumb.jpg" alt=""></div>
+<script>
+    let ok =parseInt(0);
+    function img(){
+        ok+=1;
+        if(ok==4){
+          ok= 0;
+        }
+        switch (ok){
+          case 0: document.getElementById('imgg').src="https://znews-photo.zadn.vn/w660/Uploaded/kbd_bcvi/2019_11_23/5d828d976f24eb1a752053b5_thumb.jpg";
+          break;
+          case 1: document.getElementById('imgg').src= "hinh-anh-dep-hoa-bo-cong-anh.jpg"; break;
+          case 2: document.getElementById('imgg').src="download.jpg";
+            break;
+          case 3: document.getElementById('imgg').src="download (1).jpg";
+            break;
+        }
+
+    }
+</script>
+</body>
+</html>
