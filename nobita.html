@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="doready()">
+<form>
+    <img src="https://i.ytimg.com/vi/BXPRBuYq0GE/maxresdefault.jpg" alt="cho duoi nobita" style="position:absolute;left:0;top: 0  " width="30%" id="nobita">
+    <script>
+        function upmove(){
+            let up =document.getElementById('nobita');
+            up.style.top=parseInt(up.style.top) -10 + 'px';
+        }
+        function dow (){
+            let up = document.getElementById('nobita');
+            up.style.top=parseInt(up.style.top) +10 +'px';
+        }function left(){
+            let up=document.getElementById('nobita');
+            up.style.left=parseInt(up.style.left) -10 +'px';
+        }function right(){
+            let up = document.getElementById('nobita');
+            up.style.left=parseInt(up.style.left) +10 + 'px';
+        }
+       function moveselect(evt){
+            switch (evt.keyCode){
+                case 37:
+                    left();
+                    break;
+                case 39:
+                    right();
+                    break;
+                case 38:
+                    upmove();
+                    break;
+                case 40:
+                    dow();
+            }
+       }
+       function doready(){
+            window.addEventListener('keydown', moveselect);
+       }
+
+
+    </script>
+</form>
+</body>
+</html>
