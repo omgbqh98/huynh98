@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    input[type = 'button'] {
+        width: 100%;
+    }
+</style>
+<body>
+
+<table>
+       <tr>
+   <td colspan="3"><input type="text" id="result">
+   </td>
+<td><input type="button" value="c" onclick="clr()"></td>
+</tr>
+    <tr>
+        <td><input type="button" value="1" onclick="myfunction('1')"></button></td>
+        <td><input type="button" value="2" onclick="myfunction('2')"></td>
+        <td><input type="button" value="3" onclick="myfunction('3')"></td>
+        <td><input type="button" value="+" onclick="myfunction('+')"></td></tr>
+    <tr>
+        <td><input type="button" value="4" onclick="myfunction('4')"></td>
+        <td><input type="button" value="5" onclick="myfunction('5')"></td>
+        <td><input type="button" value="6" onclick="myfunction('6')"></td>
+        <td><input type="button" value="-" onclick="myfunction('-')"></td></tr>
+    <tr>
+        <td><input type="button" value="7" onclick="myfunction('7')"></td>
+        <td><input type="button" value="8" onclick="myfunction('8')"></td>
+        <td><input type="button" value="9" onclick="myfunction('9')"></td>
+        <td><input type="button" value="*" onclick="myfunction('*')"></td></tr>
+    <tr>
+        <td><input type="button" value="." onclick="myfunction('.')"></td>
+        <td><input type="button" value="0" onclick="myfunction('0')"></td>
+        <td><input type="button" value="=" onclick="tinh('=')"></td>
+        <td><input type="button" value="/" onclick="myfunction('/')"></td></tr>
+        
+    
+
+</table>
+<script>
+function clr(){
+    document.getElementById('result').value="";
+}
+function myfunction(va){
+document.getElementById('result').value += va;
+}
+function tinh(){
+    let x = document.getElementById('result').value;
+    let y = eval(x);
+    document.getElementById('result').value=y;
+
+}
+
+
+</script>
+
+</body>
+</html>
