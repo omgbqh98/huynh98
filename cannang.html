@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let cannang =prompt('nhap can nang (kg)');
+        let chieucao = prompt('nhap chieu cao(m)');
+        let bmi = eval(cannang/(chieucao**2))
+        alert(bmi);
+        if(bmi <18.5){
+            document.write('interpretation :gay nha')
+        }else if(18.5<bmi<25.9){
+            document.write('interpretation:dang dep')
+        }else if(25<bmi<30){
+            document.write('interpretation:beo nha')
+        }else if(30<=bmi){
+            document.write('interpretation: mau nhiem mo')
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
