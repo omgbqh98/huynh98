@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<input id="good" onclick="clickBtn(this.id)" value="good" type="checkbox">good-->
+<!--<input id="fast"  onclick="clickBtn(this.id)" value="fast" type="checkbox">fast-->
+<!--<input id="cheap"  onclick="clickBtn(this.id)" value="cheap" type="checkbox">cheap-->
+
+<!--<script>-->
+<!--    function clickBtn(btn) {-->
+<!--        let good = document.getElementById('good');-->
+<!--        let fast = document.getElementById('fast');-->
+<!--        let cheap = document.getElementById('cheap');-->
+<!--        switch (btn){-->
+<!--            case 'good':-->
+<!--                if(good.checked && fast.checked){-->
+<!--                    cheap.checked = false;-->
+<!--                }-->
+<!--                break;-->
+<!--            case 'fast':-->
+<!--                if(fast.checked && cheap.checked) {-->
+<!--                    good.checked = false;-->
+<!--                    break;-->
+<!--                }-->
+
+
+<!--            case'cheap':-->
+<!--                    if (cheap.checked && good.checked) {-->
+<!--                        fast.checked = false;-->
+<!--                        break;-->
+
+<!--                    }-->
+<!--                }-->
+<!--        }-->
+<!--</script>-->
+
+
+<input id="good" type="checkbox" value="good" onclick="clickBtn(this.id)">good
+<input id="fast" type="checkbox" value="fast" onclick="clickBtn(this.id)">fast
+<input id="cheap" type="checkbox" value="cheap" onclick="clickBtn(this.id)">cheap
+<script>
+    function clickBtn(btn){
+        let good = document.getElementById('good')
+        let fast = document.getElementById('fast')
+        let cheap = document.getElementById('cheap')
+        switch (btn){
+            case 'good':
+                if(good.checked && fast.checked ){
+                    cheap.checked = false;
+                    break;
+                }
+            case 'fast':
+                if(fast.checked && cheap.checked ){
+                    good.checked = false;
+                    break;
+                }
+            case 'cheap':
+                if(cheap.checked && good.checked ){
+                    fast.checked = false;
+                    break;
+                }
+        }
+    }
+</script>
+</body>
+</html>
